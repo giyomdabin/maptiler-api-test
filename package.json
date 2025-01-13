@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "maplibre-gl": "^5.0.1",
+    "vite": "^6.0.7"
+  }
+}
