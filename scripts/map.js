@@ -1,8 +1,11 @@
 import { validateContainerId } from './utils.js';
 import maplibregl from 'maplibre-gl';
+import { geocodeAddress } from './geocoder.js'; // geocoder.js에서 함수 가져오기
 
-const MAPTILER_KEY = import.meta.env.VITE_MAPTILER_API_KEY; // Vite에서 자동으로 처리됨
-console.log('Loaded API Key:', MAPTILER_KEY);
+const MAPTILER_KEY = import.meta.env.VITE_MAPTILER_API_KEY; // MapTiler API 키
+const VWORLD_KEY = import.meta.env.VITE_VWORLD_API_KEY; // 브이월드 API 키
+
+console.log('Loaded API Keys:', MAPTILER_KEY, VWORLD_KEY);
 
 (function () {
     'use strict';
@@ -28,10 +31,7 @@ console.log('Loaded API Key:', MAPTILER_KEY);
         });
     }
 
-    /**
-     * 지도에 3D 빌딩 레이어를 추가하는 함수
-     * @param {object} map - 초기화된 지도 객체
-     */
+    // 지도에 3D 빌딩 레이어를 추가하는 함수
     function add3DBuildingsLayer(map) {
         // 지도 객체가 유효한지 확인
         if (!map || typeof map !== 'object') {
@@ -93,8 +93,32 @@ console.log('Loaded API Key:', MAPTILER_KEY);
         });
     }
 
+    /**
+     * 사용자 주소 검색을 처리하는 함수
+     * @param {object} map - 초기화된 지도 객체
+     */
+    function setupAddressSearch(map) {
+        // 검색 버튼 클릭 이벤트 처리
+        const searchButton = document.getElementById('searchButton');
+        const addressInput = document.getElementById('addressInput');
+
+        if (searchButton && addressInput) {
+            searchButton.addEventListener('click', () => {
+                const address = addressInput.value.trim(); // 입력값 가져오기
+                if (address) {
+                    geocodeAddress(address, map, VWORLD_KEY); // geocoder.js의 함수 호출
+                } else {
+                    alert('주소를 입력하세요!');
+                }
+            });
+        }
+    }
+
     // 지도 초기화 및 3D 빌딩 레이어 추가
     const map = initializeMap('map');
     add3DBuildingsLayer(map);
+
+    // 주소 검색 기능 추가
+    setupAddressSearch(map);
 
 })();
