@@ -1,11 +1,21 @@
 import maplibregl from 'maplibre-gl';
 
+let markers = []; // 지도에 표시된 마커를 저장하는 배열
+
+// 브이월드 API URL 생성 함수
 function createVWorldApiUrl(address, apiKey) {
     return `https://api.vworld.kr/req/address?service=address&request=GetCoord&version=2.0&crs=EPSG:4326&type=ROAD&address=${encodeURIComponent(
         address
     )}&format=json&key=${apiKey}`;
 }
 
+// 기존 마커 제거 함수
+function clearMarkers() {
+    markers.forEach(marker => marker.remove()); // 모든 마커 제거
+    markers = []; // 배열 초기화
+}
+
+// 마커 추가 함수
 function addMarkerToMap(map, x, y, address) {
     const marker = new maplibregl.Marker({ color: 'red' })
         .setLngLat([x, y])
@@ -15,8 +25,11 @@ function addMarkerToMap(map, x, y, address) {
             )
         )
         .addTo(map);
+
+    markers.push(marker); // 추가된 마커를 배열에 저장
 }
 
+// 주소를 지오코딩하여 지도에 마커를 추가하는 함수
 export function geocodeAddress(address, map, apiKey) {
     if (!address || typeof address !== 'string') {
         console.error('유효하지 않은 주소 입력입니다.');
@@ -43,6 +56,9 @@ export function geocodeAddress(address, map, apiKey) {
                 console.log(`반환된 좌표: x=${x}, y=${y}`);
 
                 if (map) {
+                    // 기존 마커 제거
+                    clearMarkers();
+
                     // 지도 이동
                     map.flyTo({
                         center: [parseFloat(x), parseFloat(y)],
@@ -50,7 +66,7 @@ export function geocodeAddress(address, map, apiKey) {
                         essential: true,
                     });
 
-                    // 마커 추가
+                    // 새로운 마커 추가
                     addMarkerToMap(map, parseFloat(x), parseFloat(y), address);
                 } else {
                     console.error('지도 객체가 유효하지 않습니다.');
