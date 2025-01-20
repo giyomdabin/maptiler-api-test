@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Display buildings in 3D</title>
-  <meta property="og:description" content="Use extrusions to display buildings' height in 3D." />
-  <meta charset='utf-8'>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@5.0.0/dist/maplibre-gl.css' />
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>다빈이 지도</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css"> <!-- CSS 파일 연결 -->
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.0.0/dist/maplibre-gl.css">
 </head>
 <body>
-<div id="map"></div>
-<div style="position: absolute; top: 10px; left: 10px; z-index: 999;">
-  <input id="addressInput" type="text" placeholder="주소를 입력하세요" style="padding: 5px; width: 300px;">
-  <button id="searchButton" style="padding: 5px;">검색</button>
-</div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="scripts/map.js" type="module"></script>
+  <!-- 지도 렌더링 컨테이너 -->
+  <div id="map"></div>
+
+  <!-- 검색 UI -->
+  <div id="searchContainer">
+    <input id="addressInput" type="text" placeholder="주소를 입력하세요">
+    <button id="searchButton">검색</button>
+  </div>
+
+  <!-- JS 라이브러리 및 스크립트 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/maplibre-gl@5.0.0/dist/maplibre-gl.js"></script>
+  <script src="scripts/map.js" type="module"></script>
 </body>
 </html>
