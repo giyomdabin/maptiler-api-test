@@ -20,13 +20,14 @@
 }
 
 /* 검색 입력 필드 스타일 */
-#addressInput {
+#searchInput {
   padding: 8px;
-  width: 250px;
+  width: 240px;
+  height: 14px;
   font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  margin-right: 8px;
+  margin-right: 4px;
 }
 
 /* 검색 버튼 스타일 */
@@ -43,4 +44,14 @@
 
 #searchButton:hover {
   background-color: #005ecc;
+}
+
+/* 검색 타입 스타일 */
+#searchType {
+  padding: 8px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
 }

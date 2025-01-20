@@ -13,10 +13,14 @@
 
   <!-- 검색 UI -->
   <div id="searchContainer">
-    <input id="addressInput" type="text" placeholder="주소를 입력하세요">
+    <input id="searchInput" type="text" placeholder="검색어를 입력하세요">
+    <select id="searchType">
+      <option value="PLACE" selected>장소</option>
+      <option value="ADDRESS">주소</option>
+    </select>
     <button id="searchButton">검색</button>
   </div>
-
+  
   <!-- JS 라이브러리 및 스크립트 -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://unpkg.com/maplibre-gl@5.0.0/dist/maplibre-gl.js"></script>

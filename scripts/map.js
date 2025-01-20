@@ -1,6 +1,6 @@
 import { validateContainerId } from './utils.js';
 import maplibregl from 'maplibre-gl';
-import { geocodeAddress } from './geocoder.js';
+import { searchPlaces } from './search.js';
 
 const MAPTILER_KEY = import.meta.env.VITE_MAPTILER_API_KEY;
 const VWORLD_KEY = import.meta.env.VITE_VWORLD_API_KEY;
@@ -19,7 +19,7 @@ function initializeMap(containerId) {
     });
 }
 
-// 3D 빌딩 레이어 추가 함수
+// 3D 빌딩 레이어 추가
 function add3DBuildingsLayer(map) {
     if (!map) throw new Error('지도 객체가 유효하지 않습니다.');
 
@@ -64,26 +64,31 @@ function add3DBuildingsLayer(map) {
     });
 }
 
-// 주소 검색 기능 설정 함수
-function setupAddressSearch(map) {
+// 검색 기능 설정
+function setupSearch(map) {
     const searchButton = document.getElementById('searchButton');
-    const addressInput = document.getElementById('addressInput');
+    const searchInput = document.getElementById('searchInput');
+    const searchType = document.getElementById('searchType'); // 검색 유형 선택 (장소/주소)
 
-    if (searchButton && addressInput) {
-        searchButton.addEventListener('click', () => {
-            const address = addressInput.value.trim();
-            if (address) {
-                geocodeAddress(address, map, VWORLD_KEY);
-            } else {
-                alert('주소를 입력하세요!');
-            }
-        });
-    } else {
-        console.error('검색 버튼 또는 입력 필드를 찾을 수 없습니다.');
+    if (!searchButton || !searchInput || !searchType) {
+        console.error('검색 버튼, 입력 필드 또는 유형 선택 요소를 찾을 수 없습니다.');
+        return;
     }
+
+    searchButton.addEventListener('click', () => {
+        const query = searchInput.value.trim();
+        const type = searchType.value; // 선택된 검색 유형 (PLACE 또는 ADDRESS)
+        if (!query) {
+            alert('검색어를 입력하세요!');
+            return;
+        }
+
+        // 검색 API 호출 및 결과 처리
+        searchPlaces(query, map, VWORLD_KEY, type);
+    });
 }
 
 // 지도 초기화 및 기능 실행
 const map = initializeMap('map');
 add3DBuildingsLayer(map);
-setupAddressSearch(map);
+setupSearch(map);
