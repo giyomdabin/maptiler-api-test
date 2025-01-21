@@ -1,92 +1,62 @@
-import maplibregl from 'maplibre-gl';
+import { renderSearchResults } from '../components/resultList.js';
+import { clearMarkers } from './utils.js'; // 마커 제거 함수
 
-// 마커를 저장하는 전역 배열
-let markers = [];
+const VWORLD_KEY = import.meta.env.VITE_VWORLD_API_KEY;
 
-// 검색 API URL 생성 함수
-function createVWorldSearchUrl(query, apiKey, searchType, addressCategory) {
-    if (!query || !apiKey || !searchType) {
-        throw new Error('URL 생성에 필요한 매개변수가 부족합니다.');
+// 검색 API URL 생성
+function createVWorldSearchUrl(query, searchType, addressCategory) {
+    if (searchType === 'ADDRESS') {
+        return `https://api.vworld.kr/req/search?service=search&request=search&version=2.0&key=${VWORLD_KEY}&query=${encodeURIComponent(query)}&type=${searchType}&category=${addressCategory}&format=json`;
     }
-
-    if(searchType == 'ADDRESS') {
-        return `https://api.vworld.kr/req/search?service=search&request=search&version=2.0&key=${apiKey}&query=${encodeURIComponent(
-            query)}&type=${searchType}&category=${addressCategory}&format=json`;
-    }
-
-    return `https://api.vworld.kr/req/search?service=search&request=search&version=2.0&key=${apiKey}&query=${encodeURIComponent(
-        query
-    )}&type=${searchType}&format=json`;
+    return `https://api.vworld.kr/req/search?service=search&request=search&version=2.0&key=${VWORLD_KEY}&query=${encodeURIComponent(query)}&type=${searchType}&format=json`;
 }
 
-// 기존 마커 제거 함수
-function clearMarkers() {
-    if (!Array.isArray(markers)) {
-        console.warn('마커 배열이 유효하지 않습니다.');
-        return;
-    }
-    markers.forEach(marker => marker.remove());
-    markers.length = 0;
-}
+// 검색 기능 설정
+export function setupSearch(map) {
+    const searchButton = document.getElementById('searchButton');
+    const searchInput = document.getElementById('searchInput');
+    const searchType = document.getElementById('searchType');
+    const addressCategory = document.getElementsByName('addressCategory');
+    const resultsContainer = document.getElementById('search-results');
 
-// 검색 API 호출 및 지도에 결과 표시
-export function searchPlaces(query, map, apiKey, searchType, category) {
-    if (!query || typeof query !== 'string') {
-        console.error('유효하지 않은 검색어입니다.');
-        return;
-    }
-    if (!apiKey) {
-        console.error('API 키가 설정되지 않았습니다.');
-        return;
-    }
-    if (!map) {
-        console.error('지도 객체가 유효하지 않습니다.');
-        return;
-    }
+    searchButton.addEventListener('click', () => {
+        const query = searchInput.value.trim();
+        const type = searchType.value;
+        const category = [...addressCategory].find(radio => radio.checked)?.value;
 
-    $.ajax({
-        url: createVWorldSearchUrl(query, apiKey, searchType, category),
-        type: 'GET',
-        dataType: 'jsonp',
-        success: function (result) {
-            console.log('[DEBUG] API 응답 데이터:', result);
+        console.log(`[DEBUG] ${category}`);
 
-            if (result.response && result.response.status === 'OK') {
-                const items = result.response.result.items || [];
-                if (items.length === 0) {
-                    alert('검색 결과가 없습니다.');
-                    return;
+        if (!query) {
+            alert('검색어를 입력하세요!');
+            resultsContainer.style.display = 'none'; // 검색어 없을 때도 숨김
+            return;
+        }
+
+        const url = createVWorldSearchUrl(query, type, category);
+
+        // $.ajax를 사용하여 API 호출
+        $.ajax({
+            url: url,
+            type: 'GET',
+            dataType: 'jsonp',
+            success: function (result) {
+                console.log('[DEBUG] API 응답 데이터:', result);
+
+                if (result.response && result.response.status === 'OK') {
+                    const items = result.response.result.items || [];
+                    if (items.length === 0) {
+                        alert('검색 결과가 없습니다.');
+                        return;
+                    }
+
+                    renderSearchResults(items, map); // 검색 결과 처리
+                } else {
+                    console.error('[DEBUG] 검색 실패:', result.response.error?.text || '알 수 없는 오류');
                 }
-
-                // 기존 마커 제거
-                clearMarkers();
-
-                // 검색 결과 지도에 마커 추가
-                items.forEach(item => {
-                    const { x, y } = item.point;
-                    const name = item.title || item.address;
-                    
-                    const marker = new maplibregl.Marker({ color: 'blue' })
-                        .setLngLat([parseFloat(x), parseFloat(y)])
-                        .setPopup(new maplibregl.Popup().setHTML(`<b>${name}</b><br>${item.address}`))
-                        .addTo(map);
-
-                    markers.push(marker); // 마커 저장
-                });
-
-                // 첫 번째 검색 결과로 지도 이동
-                const firstPoint = items[0].point;
-                map.flyTo({
-                    center: [parseFloat(firstPoint.x), parseFloat(firstPoint.y)],
-                    zoom: 15,
-                    essential: true,
-                });
-            } else {
-                console.error('[DEBUG] 검색 실패:', result.response.error?.text || '알 수 없는 오류');
-            }
-        },
-        error: function (error) {
-            console.error('[DEBUG] JSONP 요청 실패:', error);
-        },
+            },
+            error: function (error) {
+                console.error('[DEBUG] JSONP 요청 실패:', error);
+            },
+        });
     });
 }
