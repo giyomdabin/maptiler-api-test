@@ -70,6 +70,9 @@ function setupSearch(map) {
     const searchInput = document.getElementById('searchInput');
     const searchType = document.getElementById('searchType'); // 검색 유형 선택 (장소/주소)
 
+    const addressCategory = document.getElementsByName('addressCategory'); // <input> 태그는 name 값을 가지고 있는 애들끼리 배열로 묶음
+    var categoryChoice;
+
     if (!searchButton || !searchInput || !searchType) {
         console.error('검색 버튼, 입력 필드 또는 유형 선택 요소를 찾을 수 없습니다.');
         return;
@@ -78,13 +81,20 @@ function setupSearch(map) {
     searchButton.addEventListener('click', () => {
         const query = searchInput.value.trim();
         const type = searchType.value; // 선택된 검색 유형 (PLACE 또는 ADDRESS)
+
+        for(var i = 0; i < addressCategory.length; i++) {
+            if(addressCategory[i].checked) {
+                categoryChoice = addressCategory[i].value; // 선택된 카테고리의 값 가져오기
+            }
+        }
+
         if (!query) {
             alert('검색어를 입력하세요!');
             return;
         }
 
         // 검색 API 호출 및 결과 처리
-        searchPlaces(query, map, VWORLD_KEY, type);
+        searchPlaces(query, map, VWORLD_KEY, type, categoryChoice);
     });
 }
 

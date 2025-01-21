@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/styles.css"> <!-- CSS 파일 연결 -->
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.0.0/dist/maplibre-gl.css">
+  <style>
+    /* 라디오 버튼 컨테이너 숨김 기본값 */
+    #addressCategory {
+      display: none;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
   <!-- 지도 렌더링 컨테이너 -->
@@ -19,11 +26,36 @@
       <option value="ADDRESS">주소</option>
     </select>
     <button id="searchButton">검색</button>
+    <div id="addressCategory">
+      <label>
+        <input type="radio" name="addressCategory" value="ROAD" checked> 도로명
+      </label>
+      <label>
+        <input type="radio" name="addressCategory" value="PARCEL"> 지번
+      </label>
+    </div>
   </div>
   
   <!-- JS 라이브러리 및 스크립트 -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://unpkg.com/maplibre-gl@5.0.0/dist/maplibre-gl.js"></script>
+  <script>
+    // 검색 유형에 따라 UI 업데이트
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchType = document.getElementById('searchType');
+      const addressCategory = document.getElementById('addressCategory');
+
+      // 검색 유형 변경 이벤트
+      searchType.addEventListener('change', () => {
+        if (searchType.value === 'ADDRESS') {
+          addressCategory.style.display = 'block'; // 주소일 경우 라디오 버튼 표시
+        } else {
+          addressCategory.style.display = 'none'; // 장소일 경우 라디오 버튼 숨김
+        }
+      });
+    });
+  </script>
   <script src="scripts/map.js" type="module"></script>
 </body>
 </html>
+

@@ -4,10 +4,16 @@ import maplibregl from 'maplibre-gl';
 let markers = [];
 
 // 검색 API URL 생성 함수
-function createVWorldSearchUrl(query, apiKey, searchType) {
+function createVWorldSearchUrl(query, apiKey, searchType, addressCategory) {
     if (!query || !apiKey || !searchType) {
         throw new Error('URL 생성에 필요한 매개변수가 부족합니다.');
     }
+
+    if(searchType == 'ADDRESS') {
+        return `https://api.vworld.kr/req/search?service=search&request=search&version=2.0&key=${apiKey}&query=${encodeURIComponent(
+            query)}&type=${searchType}&category=${addressCategory}&format=json`;
+    }
+
     return `https://api.vworld.kr/req/search?service=search&request=search&version=2.0&key=${apiKey}&query=${encodeURIComponent(
         query
     )}&type=${searchType}&format=json`;
@@ -24,7 +30,7 @@ function clearMarkers() {
 }
 
 // 검색 API 호출 및 지도에 결과 표시
-export function searchPlaces(query, map, apiKey, searchType) {
+export function searchPlaces(query, map, apiKey, searchType, category) {
     if (!query || typeof query !== 'string') {
         console.error('유효하지 않은 검색어입니다.');
         return;
@@ -38,11 +44,8 @@ export function searchPlaces(query, map, apiKey, searchType) {
         return;
     }
 
-    console.log(`[DEBUG] 요청한 검색어: ${query}`);
-    console.log(`[DEBUG] 검색 유형: ${searchType}`);
-
     $.ajax({
-        url: createVWorldSearchUrl(query, apiKey, searchType),
+        url: createVWorldSearchUrl(query, apiKey, searchType, category),
         type: 'GET',
         dataType: 'jsonp',
         success: function (result) {
