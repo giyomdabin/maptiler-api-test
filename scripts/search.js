@@ -1,5 +1,4 @@
 import { renderSearchResults } from '../components/resultList.js';
-import { clearMarkers } from './utils.js'; // 마커 제거 함수
 
 const VWORLD_KEY = import.meta.env.VITE_VWORLD_API_KEY;
 
