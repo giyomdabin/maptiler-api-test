@@ -2,6 +2,7 @@ import { validateContainerId } from './utils.js';
 import maplibregl from 'maplibre-gl';
 import { setupSearch } from './search.js';
 import { initializeSearchUI } from '../components/searchUI.js';
+import { getLocation } from './geolocation.js';
 
 const MAPTILER_KEY = import.meta.env.VITE_MAPTILER_API_KEY;
 
@@ -69,3 +70,4 @@ const map = initializeMap('map');
 add3DBuildingsLayer(map);
 initializeSearchUI(); // 검색 UI 초기화
 setupSearch(map);
+getLocation(map);
