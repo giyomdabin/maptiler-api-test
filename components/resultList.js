@@ -1,4 +1,5 @@
 import maplibregl from 'maplibre-gl';
+import {resetPreviousCoords} from '../scripts/geolocation.js';
 
 let markers = []; // 지도에 추가된 마커를 관리하는 배열
 
@@ -93,5 +94,7 @@ export function renderSearchResults(items, map) {
             center: [parseFloat(firstPoint.x), parseFloat(firstPoint.y)],
             zoom: 15,
         });
+
+        resetPreviousCoords(); // 이전 좌표 초기화
     }
 }

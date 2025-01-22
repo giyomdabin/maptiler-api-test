@@ -1,7 +1,7 @@
 import maplibregl from 'maplibre-gl';
 
-let marker = null;
 let previousCoords = null; // 이전 위치를 저장
+let marker = null;
 
 // 위치 정보를 가져오는 함수
 export function getLocation(map) {
@@ -15,14 +15,17 @@ export function getLocation(map) {
       console.log(`경도: ${lng}, 위도: ${lat}`);
 
        // 이전 좌표와 현재 좌표 비교
-       if (previousCoords && previousCoords.lat === lat && previousCoords.lng === lng) {
-        alert("위치가 변경되지 않았습니다.");
-        return; // 위치가 동일하면 아무 작업도 하지 않음
+      if (previousCoords && previousCoords.lat === lat && previousCoords.lng === lng) {
+        map.flyTo({
+          center: [lng, lat],
+          zoom: 15
+        });
+        return; // 위치가 동일하면 화면만 전환
       }
       
-      previousCoords = { lat, lng };
+      previousCoords = { lat, lng }; 
 
-      const marker = new maplibregl.Marker({ color: 'red' })
+      marker = new maplibregl.Marker({ color: 'red' })
         .setLngLat([lng, lat])
         .setPopup(
           new maplibregl.Popup().setHTML(`
@@ -32,7 +35,7 @@ export function getLocation(map) {
         ).addTo(map);
 
       map.flyTo({
-        center: [parseFloat(lng), parseFloat(lat)],
+        center: [lng, lat],
         zoom: 15
       });
     });
@@ -42,4 +45,15 @@ export function getLocation(map) {
 }
 
 // 위치 정보 가져오기 버튼 클릭 이벤트
-document.querySelector("#find-me").addEventListener("click", getLocation);
+document.querySelector("#find-me").addEventListener("click", () => {
+  if (!window.mapInstance) {
+    console.error("지도 객체가 초기화되지 않았습니다.");
+    return;
+  }
+  getLocation(window.mapInstance); // map 객체 전달
+});
+
+// 검색 결과 선택 시 이전 좌표 초기화
+export function resetPreviousCoords() {
+  previousCoords = null;
+}

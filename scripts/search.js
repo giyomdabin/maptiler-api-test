@@ -39,7 +39,6 @@ export function setupSearch(map) {
             type: 'GET',
             dataType: 'jsonp',
             success: function (result) {
-                console.log('[DEBUG] API 응답 데이터:', result);
 
                 if (result.response && result.response.status === 'OK') {
                     const items = result.response.result.items || [];

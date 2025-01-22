@@ -67,7 +67,7 @@ function add3DBuildingsLayer(map) {
 
 // 지도 초기화 및 기능 실행
 const map = initializeMap('map');
+window.mapInstance = map; // 전역으로 저장
 add3DBuildingsLayer(map);
 initializeSearchUI(); // 검색 UI 초기화
 setupSearch(map);
-getLocation(map);
