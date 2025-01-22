@@ -3,34 +3,34 @@ import {resetPreviousCoords} from '../scripts/geolocation.js';
 
 let markers = []; // 지도에 추가된 마커를 관리하는 배열
 
+const searchType = document.getElementById('searchType');
+const addressCategory = document.getElementById('addressCategory');
+const resultsContainer = document.getElementById('search-results');
+const openResultsButton = document.getElementById('open-results');
+const closeResultsButton = document.getElementById('close-results');
+
 // 기존 마커 제거 함수
 function clearMarkers() {
     markers.forEach(marker => marker.remove());
     markers.length = 0;
 }
 
-// 검색 결과 렌더링 및 지도 마커 추가
-export function renderSearchResults(items, map) {
-    const resultsContainer = document.getElementById('search-results');
-    const closeResultsButton = document.getElementById('close-results');
-    const openResultsButton = document.getElementById('open-results');
-
-    if (!resultsContainer) {
-        console.error('검색 결과 컨테이너를 찾을 수 없습니다.');
+export function initializeSearchUI() {
+    if (!searchType || !addressCategory || !resultsContainer || !searchContainer || !openResultsButton) {
+        console.error('UI 요소를 찾을 수 없습니다.');
         return;
     }
 
-    // 닫기 버튼 동작
-    closeResultsButton.addEventListener('click', () => {
-        resultsContainer.style.display = 'none'; 
-        openResultsButton.style.display = 'block'; 
+    searchType.addEventListener('change', () => {
+        // 검색창 타입 변경 시 주소 선택 옵션 표시/숨김
+        searchType.value === 'ADDRESS' ? addressCategory.style.display = 'block' : addressCategory.style.display = 'none'; 
+        updatePosition(); // 검색 결과 및 열기 버튼 위치 조정
     });
+    updatePosition(); // 초기 상태에서도 위치 조정
+}
 
-    // 열기 버튼 동작
-    openResultsButton.addEventListener('click', () => {
-        resultsContainer.style.display = 'block'; 
-        openResultsButton.style.display = 'none'; 
-    });
+// 검색 결과 렌더링 및 지도 마커 추가
+export function renderSearchResults(items, map) {
 
     resultsContainer.innerHTML = ''; // 기존 리스트 초기화
     clearMarkers(); // 기존 마커 제거
@@ -78,11 +78,7 @@ export function renderSearchResults(items, map) {
         const marker = new maplibregl.Marker({ color: 'blue' })
             .setLngLat([parseFloat(x), parseFloat(y)])
             .setPopup(
-                new maplibregl.Popup().setHTML(`
-                    <b>${name}</b><br>${address}
-                `)
-            )
-            .addTo(map);
+                new maplibregl.Popup().setHTML(`<b>${name}</b><br>${address}`)).addTo(map);
 
         markers.push(marker); // 추가된 마커를 배열에 저장
     });
@@ -97,4 +93,33 @@ export function renderSearchResults(items, map) {
 
         resetPreviousCoords(); // 이전 좌표 초기화
     }
+}
+
+// 위치 업데이트 함수: 검색창 아래로 정렬
+function updatePosition() {
+    const searchContainerRect = searchContainer.getBoundingClientRect();
+    resultsContainer.style.top = `${searchContainerRect.bottom + 10}px`;
+    resultsContainer.style.left = `${searchContainerRect.left}px`;
+    resultsContainer.style.width = `${searchContainerRect.width}px`;
+
+    openResultsButton.style.top = `${searchContainerRect.bottom + 10}px`;
+    openResultsButton.style.left = `${searchContainerRect.left}px`;
+}
+
+// 열기 버튼 클릭 이벤트
+openResultsButton.addEventListener('click', () => {
+    resultsContainer.style.display = 'block'; // 결과 표시
+    openResultsButton.style.display = 'none'; // 열기 버튼 숨김
+});
+
+closeResultsButton.addEventListener('click', () => {
+    openResultsButton.style.display = 'block'; // 결과 표시
+    resultsContainer.style.display = 'none'; // 열기 버튼 숨김
+});
+
+// 초기 상태 설정
+if (searchType.value === 'ADDRESS') {
+    addressCategory.style.display = 'block';
+} else {
+    addressCategory.style.display = 'none';
 }

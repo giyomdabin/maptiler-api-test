@@ -1,14 +1,11 @@
-import { validateContainerId } from './utils.js';
 import maplibregl from 'maplibre-gl';
-import { setupSearch } from './search.js';
-import { initializeSearchUI } from '../components/searchUI.js';
-import { getLocation } from './geolocation.js';
+import { setupSearch } from '/scripts/search.js';
+import { initializeSearchUI } from '/components/resultList.js';
 
 const MAPTILER_KEY = import.meta.env.VITE_MAPTILER_API_KEY;
 
 // 지도 초기화 함수
 function initializeMap(containerId) {
-    validateContainerId(containerId);
     return new maplibregl.Map({
         style: `https://api.maptiler.com/maps/basic-v2/style.json?key=${MAPTILER_KEY}`,
         center: [126.9780, 37.5665], // 서울 중심
@@ -69,5 +66,7 @@ function add3DBuildingsLayer(map) {
 const map = initializeMap('map');
 window.mapInstance = map; // 전역으로 저장
 add3DBuildingsLayer(map);
+
 initializeSearchUI(); // 검색 UI 초기화
+
 setupSearch(map);
