@@ -1,5 +1,6 @@
 import maplibregl from 'maplibre-gl';
 import {resetPreviousCoords} from '../scripts/geolocation.js';
+import { addFavorite, removeFavorite } from '../scripts/favorite.js';
 
 let markers = []; // 지도에 추가된 마커를 관리하는 배열
 
@@ -24,9 +25,9 @@ export function initializeSearchUI() {
     searchType.addEventListener('change', () => {
         // 검색창 타입 변경 시 주소 선택 옵션 표시/숨김
         searchType.value === 'ADDRESS' ? addressCategory.style.display = 'block' : addressCategory.style.display = 'none'; 
-        updatePosition(); // 검색 결과 및 열기 버튼 위치 조정
+        updatePosition(); 
     });
-    updatePosition(); // 초기 상태에서도 위치 조정
+    updatePosition();
 }
 
 // 검색 결과 렌더링 및 지도 마커 추가
@@ -44,7 +45,6 @@ export function renderSearchResults(items, map) {
 
     // 검색 결과가 있으면 보이도록 설정
     resultsContainer.style.display = 'block';
-    openResultsButton.style.display = 'none';
 
     // 닫기 버튼 유지
     resultsContainer.appendChild(closeResultsButton);
@@ -60,17 +60,12 @@ export function renderSearchResults(items, map) {
         const resultItem = document.createElement('div');
         resultItem.className = 'search-result-item';
         resultItem.innerHTML = `
-            <h4>${name}</h4>
-            <p>${address}</p>
+            <div class="search-result-content">
+                <h4>${name}</h4>
+                <span>${address}</span>
+            </div>
+            <img src="../assets/images/star-empty.svg" alt="즐겨찾기 아이콘" />
         `;
-
-        // 리스트 항목 클릭 시 지도 이동
-        resultItem.addEventListener('click', () => {
-            map.flyTo({
-                center: [parseFloat(x), parseFloat(y)],
-                zoom: 15,
-            });
-        });
 
         resultsContainer.appendChild(resultItem);
 
@@ -81,6 +76,29 @@ export function renderSearchResults(items, map) {
                 new maplibregl.Popup().setHTML(`<b>${name}</b><br>${address}`)).addTo(map);
 
         markers.push(marker); // 추가된 마커를 배열에 저장
+
+        // 리스트 항목 클릭 시 지도 이동
+        resultItem.addEventListener('click', () => {
+            map.flyTo({
+                center: [parseFloat(x), parseFloat(y)],
+                zoom: 15,
+            });
+        });
+
+        // 즐겨찾기 버튼을 눌렀을 때
+        resultItem.querySelector('img').addEventListener('click', (e) => {
+            e.stopPropagation(); // 부모 클릭 이벤트 방지
+            const icon = e.target; 
+            const isFavorite = icon.src.includes('star-filled');
+
+            if (isFavorite) {
+                icon.src = '../assets/images/star-empty.svg';
+                removeFavorite(name, address);
+            } else {
+                icon.src = '../assets/images/star-filled.svg';
+                addFavorite(name, address);
+            }
+        });
     });
 
     // 첫 번째 결과로 지도 이동

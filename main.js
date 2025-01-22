@@ -1,6 +1,7 @@
 import maplibregl from 'maplibre-gl';
 import { setupSearch } from '/scripts/search.js';
 import { initializeSearchUI } from '/components/resultList.js';
+import { getFavoriteList } from './components/favoriteList';
 
 const MAPTILER_KEY = import.meta.env.VITE_MAPTILER_API_KEY;
 
@@ -68,5 +69,5 @@ window.mapInstance = map; // 전역으로 저장
 add3DBuildingsLayer(map);
 
 initializeSearchUI(); // 검색 UI 초기화
-
 setupSearch(map);
+getFavoriteList();

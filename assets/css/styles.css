@@ -125,7 +125,6 @@
 #open-results {
   display: none; /* 기본적으로 숨김 */
   position: absolute;
-  top: calc(100% + px); /* 검색창 바로 아래 */
   left: 10px;
   padding: 5px 10px;
   background-color: #0078ff;
@@ -143,11 +142,18 @@
 
 /* 검색 결과 항목 스타일 */
 .search-result-item {
+  display: flex;
   padding: 10px;
   border-bottom: 1px solid #eee;
   cursor: pointer;
   border-radius: 4px;
   transition: background-color 0.3s;
+}
+
+/* 제목과 본문을 세로로 정렬할 컨테이너 */
+.search-result-content {
+  display: flex;
+  flex-direction: column; /* 제목과 본문을 세로로 정렬 */
 }
 
 .search-result-item:hover {
@@ -166,18 +172,51 @@
 }
 
 /* 검색 결과 주소 */
-.search-result-item p {
+.search-result-item span {
   margin: 5px 0 0;
   font-size: 12px;
   color: #555;
 }
 
+/* 즐겨찾기 버튼 */
+.search-result-item img {
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* 즐겨찾기 목록 버튼 컨테이너 스타일*/
+#favorite {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
+/* 즐겨찾기 목록 버튼 */
+#favorite-list {
+  margin-left: auto;
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #0078ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#favorite-list:hover {
+  background-color: #005ecc;
+}
+
 /* 위치 정보 컨테이너 스타일 */
 #locationContainer {
   position: absolute;
-  bottom: 20px; /* 화면 아래쪽에 위치 */
-  left: 10px; /* 왼쪽으로 간격 */
-  z-index: 1000; /* 지도 UI 위에 표시 */
+  bottom: 20px; 
+  left: 10px; 
+  z-index: 1000; 
 }
 
 #find-me {
@@ -194,4 +233,3 @@
 #find-me:hover {
   background-color: #005ecc;
 }
-

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.0.0/dist/maplibre-gl.css">
 </head>
+
 <body>
   <!-- 지도 컨테이너 -->
   <div id="map"></div>
@@ -30,7 +32,7 @@
   </div>
 
   <!-- 열기 버튼 -->
-<button id="open-results" style="display: none;">결과보기</button>
+  <button id="open-results" style="display: none;">결과보기</button>
 
   <!-- 검색 결과 컨테이너 -->
   <div id="search-results">
@@ -41,9 +43,14 @@
     <button id="find-me">내 위치 보기</button><br />
   </div>
 
+  <div id="favorite">
+    <button id="favorite-list">즐겨찾기 리스트</button>
+  </div>
+
   <!-- 스크립트 -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://unpkg.com/maplibre-gl@5.0.0/dist/maplibre-gl.js"></script>
   <script src="main.js" type="module" defer></script>
 </body>
+
 </html>
