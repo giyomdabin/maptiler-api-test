@@ -65,7 +65,7 @@ export function renderSearchResults(items, map) {
                 <h4>${name}</h4>
                 <span>${address}</span>
             </div>
-            <img src="../assets/images/${isFavorite ? 'star-filled' : 'star-empty'}.svg" alt="즐겨찾기 아이콘" />`;
+            <img src="/assets/images/${isFavorite ? 'star-filled' : 'star-empty'}.svg" alt="즐겨찾기 아이콘" />`;
 
         resultsContainer.appendChild(resultItem);
 
@@ -92,10 +92,10 @@ export function renderSearchResults(items, map) {
             const isFavorite = icon.src.includes('star-filled');
 
             if (isFavorite) {
-                icon.src = '../assets/images/star-empty.svg';
+                icon.src = '/assets/images/star-empty.svg';
                 removeFavorite(address);
             } else {
-                icon.src = '../assets/images/star-filled.svg';
+                icon.src = '/assets/images/star-filled.svg';
                 addFavorite(name, address);
             }
         });
