@@ -1,6 +1,6 @@
 import maplibregl from 'maplibre-gl';
 import {resetPreviousCoords} from '../scripts/geolocation.js';
-import { addFavorite, removeFavorite } from '../scripts/favorite.js';
+import { addFavorite, loadFavorites, removeFavorite } from '../scripts/favorite.js';
 
 let markers = []; // 지도에 추가된 마커를 관리하는 배열
 
@@ -42,9 +42,10 @@ export function renderSearchResults(items, map) {
 
     // 검색 결과가 있으면 보이도록 설정
     resultsContainer.style.display = 'block';
-
-    // 닫기 버튼 유지
     resultsContainer.appendChild(closeResultsButton);
+
+    // 로컬 스토리지에서 즐겨찾기 데이터 가져오기
+    const favorites = loadFavorites();
 
     items.forEach(item => {
         const { x, y } = item.point; // 좌표
@@ -52,6 +53,9 @@ export function renderSearchResults(items, map) {
         const address = item.address.road || '주소 정보 없음';
         
         console.log(parseFloat(x), parseFloat(y));
+
+         // 즐겨찾기 상태 확인
+         const isFavorite = favorites[address] === name;
 
         // 리스트 항목 생성
         const resultItem = document.createElement('div');
@@ -61,7 +65,7 @@ export function renderSearchResults(items, map) {
                 <h4>${name}</h4>
                 <span>${address}</span>
             </div>
-            <img src="../assets/images/star-empty.svg" alt="즐겨찾기 아이콘" />`;
+            <img src="../assets/images/${isFavorite ? 'star-filled' : 'star-empty'}.svg" alt="즐겨찾기 아이콘" />`;
 
         resultsContainer.appendChild(resultItem);
 
