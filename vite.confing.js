@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+  base: '/',
   server: {
     open: true, // Vite 서버 실행 시 자동으로 브라우저 열기
   },

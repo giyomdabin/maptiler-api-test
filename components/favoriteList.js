@@ -6,9 +6,9 @@ const resultsContainer = document.getElementById('favorite-results'); // 즐겨�
 function updateFavoritePosition() {
     const favoriteListButtonRect = favoriteListButton.getBoundingClientRect();
 
-    // 기본 위치 설정 (버튼 아래)
-    const topPosition = favoriteListButtonRect.bottom + 10; // 버튼 아래로 10px
-    const rightPosition = window.innerWidth - favoriteListButtonRect.right; // 뷰포트 오른쪽 기준
+    // 기본 위치 설정 
+    const topPosition = favoriteListButtonRect.bottom + 10; 
+    const rightPosition = window.innerWidth - favoriteListButtonRect.right; 
 
     resultsContainer.style.top = `${topPosition}px`;
     resultsContainer.style.right = `${rightPosition}px`;
