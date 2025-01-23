@@ -67,7 +67,7 @@ export function getFavoriteList() {
                 <h4>${name}</h4>
                 <span>${address}</span>
             </div>
-            <img src="/public/assets/images/star-filled.svg" alt="즐겨찾기 아이콘" />`;
+            <img src="/assets/images/star-filled.svg" alt="즐겨찾기 아이콘" />`;
 
             // 즐겨찾기 제거
             favoriteItem.querySelector('img').addEventListener('click', (e) => {
