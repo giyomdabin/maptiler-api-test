@@ -6,22 +6,19 @@ let markers = []; // 지도에 추가된 마커를 관리하는 배열
 
 const searchType = document.getElementById('searchType');
 const addressCategory = document.getElementById('addressCategory');
-const resultsContainer = document.getElementById('search-results');
+const resultsContainer = document.getElementById('search-results'); // 검색 결과
 const openResultsButton = document.getElementById('open-results');
 const closeResultsButton = document.getElementById('close-results');
+const searchContainer = document.getElementById('searchContainer');
 
-// 기존 마커 제거 함수
-function clearMarkers() {
-    markers.forEach(marker => marker.remove());
-    markers.length = 0;
+// 초기 상태 설정
+if (searchType.value === 'ADDRESS') {
+    addressCategory.style.display = 'block';
+} else {
+    addressCategory.style.display = 'none';
 }
 
 export function initializeSearchUI() {
-    if (!searchType || !addressCategory || !resultsContainer || !searchContainer || !openResultsButton) {
-        console.error('UI 요소를 찾을 수 없습니다.');
-        return;
-    }
-
     searchType.addEventListener('change', () => {
         // 검색창 타입 변경 시 주소 선택 옵션 표시/숨김
         searchType.value === 'ADDRESS' ? addressCategory.style.display = 'block' : addressCategory.style.display = 'none'; 
@@ -58,14 +55,13 @@ export function renderSearchResults(items, map) {
 
         // 리스트 항목 생성
         const resultItem = document.createElement('div');
-        resultItem.className = 'search-result-item';
+        resultItem.className = 'result-item';
         resultItem.innerHTML = `
-            <div class="search-result-content">
+            <div class="result-content">
                 <h4>${name}</h4>
                 <span>${address}</span>
             </div>
-            <img src="../assets/images/star-empty.svg" alt="즐겨찾기 아이콘" />
-        `;
+            <img src="../assets/images/star-empty.svg" alt="즐겨찾기 아이콘" />`;
 
         resultsContainer.appendChild(resultItem);
 
@@ -93,7 +89,7 @@ export function renderSearchResults(items, map) {
 
             if (isFavorite) {
                 icon.src = '../assets/images/star-empty.svg';
-                removeFavorite(name, address);
+                removeFavorite(address);
             } else {
                 icon.src = '../assets/images/star-filled.svg';
                 addFavorite(name, address);
@@ -113,7 +109,7 @@ export function renderSearchResults(items, map) {
     }
 }
 
-// 위치 업데이트 함수: 검색창 아래로 정렬
+// 검색창 아래로 정렬
 function updatePosition() {
     const searchContainerRect = searchContainer.getBoundingClientRect();
     resultsContainer.style.top = `${searchContainerRect.bottom + 10}px`;
@@ -122,6 +118,12 @@ function updatePosition() {
 
     openResultsButton.style.top = `${searchContainerRect.bottom + 10}px`;
     openResultsButton.style.left = `${searchContainerRect.left}px`;
+}
+
+// 기존 마커 제거 함수
+function clearMarkers() {
+    markers.forEach(marker => marker.remove());
+    markers.length = 0;
 }
 
 // 열기 버튼 클릭 이벤트
@@ -134,10 +136,3 @@ closeResultsButton.addEventListener('click', () => {
     openResultsButton.style.display = 'block'; // 결과 표시
     resultsContainer.style.display = 'none'; // 열기 버튼 숨김
 });
-
-// 초기 상태 설정
-if (searchType.value === 'ADDRESS') {
-    addressCategory.style.display = 'block';
-} else {
-    addressCategory.style.display = 'none';
-}

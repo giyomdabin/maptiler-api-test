@@ -92,13 +92,10 @@
 
 /* 검색 결과 컨테이너 스타일 */
 #search-results {
-  display: none;
+  display: none; 
   position: absolute;
-  top: calc(100% + 5px); /* 검색창 바로 아래 */
-  left: 0;
   max-height: 300px;
   overflow-y: auto;
-  width: 100%; /* 검색창 너비에 맞춤 */
   border: 1px solid #ddd;
   background: rgba(255, 255, 255, 0.95);
   border-radius: 8px;
@@ -140,8 +137,8 @@
   background-color: #005ecc;
 }
 
-/* 검색 결과 항목 스타일 */
-.search-result-item {
+/* 결과 항목 스타일 */
+.result-item {
   display: flex;
   padding: 10px;
   border-bottom: 1px solid #eee;
@@ -151,35 +148,35 @@
 }
 
 /* 제목과 본문을 세로로 정렬할 컨테이너 */
-.search-result-content {
+.result-content {
   display: flex;
   flex-direction: column; /* 제목과 본문을 세로로 정렬 */
 }
 
-.search-result-item:hover {
+.result-item:hover {
   background-color: #f1f5ff;
 }
 
-.search-result-item:last-child {
+.result-item:last-child {
   border-bottom: none;
 }
 
-/* 검색 결과 제목 */
-.search-result-item h4 {
+/* 결과 제목 */
+.result-item h4 {
   margin: 0;
   font-size: 14px;
   color: #0078ff;
 }
 
-/* 검색 결과 주소 */
-.search-result-item span {
+/* 결과 주소 */
+.result-item span {
   margin: 5px 0 0;
   font-size: 12px;
   color: #555;
 }
 
-/* 즐겨찾기 버튼 */
-.search-result-item img {
+/* 즐겨찾기 추가/제거 아이콘 */
+.result-item img {
   margin-left: auto;
   width: 20px;
   height: 20px;
@@ -188,7 +185,7 @@
 }
 
 /* 즐겨찾기 목록 버튼 컨테이너 스타일*/
-#favorite {
+#favoriteContainer {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -209,6 +206,22 @@
 
 #favorite-list:hover {
   background-color: #005ecc;
+}
+
+/* 검색 결과 컨테이너 스타일 */
+#favorite-results {
+  display: none;
+  position: absolute;
+  right: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  width: 100%; 
+  border: 1px solid #ddd;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 999;
 }
 
 /* 위치 정보 컨테이너 스타일 */
