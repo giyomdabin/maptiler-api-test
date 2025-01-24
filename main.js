@@ -73,38 +73,48 @@ function add3DBuildingsLayer(map) {
 function addSubway(map) {
     if (!map) throw new Error('지도 객체가 유효하지 않습니다.');
 
-    console.log("지하철데이터 로드중");
-
     map.on('load', () => {
         // GeoJSON 데이터 추가
         map.addSource('subway', {
             type: 'geojson',
-            data: '/assets/data/seoul_subway.geojson'
+            data: '/assets/data/subway.geojson'
         });
 
-        // 지하철 역을 지도에 표시하기
+        // 지하철 역 아이콘 레이어 추가
         map.addLayer({
             id: 'subway-layer',
-            type: 'circle',
+            type: 'symbol',
             source: 'subway',
+            layout: {
+                'icon-image': 'subway', 
+                'icon-size': 1,           // 아이콘 크기
+                'text-font': ['Open Sans Regular'], 
+                'text-offset': [0, 1.2],   // 텍스트 위치 조정
+                'text-anchor': 'top',      // 텍스트 정렬
+                'icon-allow-overlap': true // 아이콘 겹침 허용
+            },
             paint: {
-                'circle-radius': 6,
-                'circle-color': '#FF5733'
+                'text-color': '#333333'    // 텍스트 색상
             }
         });
+
+        // 아이콘 등록 
+        map.loadImage('/assets/images/subway.png');
 
         // 레이어 클릭 이벤트
         map.on('click', 'subway-layer', (e) => {
             const coordinates = e.features[0].geometry.coordinates.slice();
+            const lng = e.features[0].geometry.coordinates[0].toFixed(6); // 경도 제한
+            const lat = e.features[0].geometry.coordinates[1].toFixed(6); // 위도 제한
             const properties = e.features[0].properties;
 
-            const stationName = properties.역명; 
-            const lineInfo = properties.호선; 
+            const stationName = properties.name; 
+            const lineInfo = properties.line;    
 
             // Popup 생성
             new maplibregl.Popup()
                 .setLngLat(coordinates) // 클릭한 위치
-                .setHTML(`<strong>${stationName}</strong><br>호선: ${lineInfo}`)
+                .setHTML(`<strong>${stationName}</strong><br>호선: ${lineInfo}<br>${lng},${lat}`)
                 .addTo(map);
         });
 
@@ -118,6 +128,7 @@ function addSubway(map) {
         });
     });
 }
+
 
 // 지도 초기화 및 기능 실행
 const map = initializeMap('map');
