@@ -33,8 +33,7 @@ export function getFavoriteList() {
         // 현재 상태 확인
         const isVisible = resultsContainer.style.display === 'block';
 
-        if (isVisible) {
-            // 리스트가 열려있으면 숨김
+        if (isVisible) { // 리스트가 열려있으면 숨김
             resultsContainer.style.display = 'none';
             return;
         }

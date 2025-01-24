@@ -5,6 +5,10 @@ let marker = null;
 
 // 위치 정보를 가져오는 함수
 export function getLocation(map) {
+  console.log(window.navigator.userAgent);
+  const userLanguage = navigator.language || navigator.userLanguage;
+
+  console.log(userLanguage);
 
   if ("geolocation" in navigator) {
     // Geolocation API 사용 가능
@@ -53,7 +57,6 @@ document.querySelector("#find-me").addEventListener("click", () => {
   getLocation(window.mapInstance); // map 객체 전달
 });
 
-// 검색 결과 선택 시 이전 좌표 초기화
 export function resetPreviousCoords() {
   previousCoords = null;
 }

@@ -32,10 +32,10 @@ export function renderSearchResults(items, map) {
 
     resultsContainer.innerHTML = ''; // 기존 리스트 초기화
     clearMarkers(); // 기존 마커 제거
+    openResultsButton.style.display = 'none';
 
     if (items.length === 0) {
         resultsContainer.style.display = 'none'; // 결과가 없으면 숨김
-        openResultsButton.style.display = 'none';
         alert('검색 결과가 없습니다.');
         return;
     }
@@ -48,7 +48,7 @@ export function renderSearchResults(items, map) {
     const favorites = loadFavorites();
 
     items.forEach(item => {
-        const { x, y } = item.point; // 좌표
+        const { x, y } = item.point; 
         const name = item.title || '제목 없음';
         const address = item.address.road || '주소 정보 없음';
         
