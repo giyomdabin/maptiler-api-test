@@ -1,0 +1,3869 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.9780,
+                    37.5665
+                ]
+            },
+            "properties": {
+                "역명": "서울",
+                "호선": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.975407,
+                    37.56359
+                ]
+            },
+            "properties": {
+                "역명": "시청",
+                "호선": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.983116,
+                    37.570203
+                ]
+            },
+            "properties": {
+                "역명": "종각",
+                "호선": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.992095,
+                    37.570429
+                ]
+            },
+            "properties": {
+                "역명": "종로3가",
+                "호선": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.0019,
+                    37.570971
+                ]
+            },
+            "properties": {
+                "역명": "종로5가",
+                "호선": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.011383,
+                    37.57179
+                ]
+            },
+            "properties": {
+                "역명": "동대문",
+                "호선": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.016459,
+                    37.573265
+                ]
+            },
+            "properties": {
+                "역명": "동묘앞",
+                "호선": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.02471,
+                    37.576117
+                ]
+            },
+            "properties": {
+                "역명": "신설동",
+                "호선": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.034902,
+                    37.578116
+                ]
+            },
+            "properties": {
+                "역명": "제기동",
+                "호선": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.045063,
+                    37.580148
+                ]
+            },
+            "properties": {
+                "역명": "청량리",
+                "호선": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.982569,
+                    37.565998
+                ]
+            },
+            "properties": {
+                "역명": "을지로입구",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.991773,
+                    37.566292
+                ]
+            },
+            "properties": {
+                "역명": "을지로3가",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.998122,
+                    37.566611
+                ]
+            },
+            "properties": {
+                "역명": "을지로4가",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.009113,
+                    37.565597
+                ]
+            },
+            "properties": {
+                "역명": "동대문역사문화공원",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.019488,
+                    37.565681
+                ]
+            },
+            "properties": {
+                "역명": "신당",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.028872,
+                    37.564504
+                ]
+            },
+            "properties": {
+                "역명": "상왕십리",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.035505,
+                    37.561159
+                ]
+            },
+            "properties": {
+                "역명": "왕십리",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.043504,
+                    37.55658
+                ]
+            },
+            "properties": {
+                "역명": "한양대",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.047413,
+                    37.54718
+                ]
+            },
+            "properties": {
+                "역명": "뚝섬",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.055983,
+                    37.544628
+                ]
+            },
+            "properties": {
+                "역명": "성수",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.069231,
+                    37.540408
+                ]
+            },
+            "properties": {
+                "역명": "건대입구",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.085024,
+                    37.536857
+                ]
+            },
+            "properties": {
+                "역명": "구의",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.094684,
+                    37.535161
+                ]
+            },
+            "properties": {
+                "역명": "강변",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.103836,
+                    37.520688
+                ]
+            },
+            "properties": {
+                "역명": "잠실나루",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.100129,
+                    37.513305
+                ]
+            },
+            "properties": {
+                "역명": "잠실",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.103738,
+                    37.520731
+                ]
+            },
+            "properties": {
+                "역명": "잠실새내",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.073641,
+                    37.511008
+                ]
+            },
+            "properties": {
+                "역명": "종합운동장",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.063203,
+                    37.508827
+                ]
+            },
+            "properties": {
+                "역명": "삼성",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.048174,
+                    37.504257
+                ]
+            },
+            "properties": {
+                "역명": "선릉",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.03643,
+                    37.500658
+                ]
+            },
+            "properties": {
+                "역명": "역삼",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.027539,
+                    37.497958
+                ]
+            },
+            "properties": {
+                "역명": "강남",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.014631,
+                    37.493957
+                ]
+            },
+            "properties": {
+                "역명": "교대",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.007945,
+                    37.49191
+                ]
+            },
+            "properties": {
+                "역명": "서초",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.997627,
+                    37.481469
+                ]
+            },
+            "properties": {
+                "역명": "방배",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.981631,
+                    37.476536
+                ]
+            },
+            "properties": {
+                "역명": "사당",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.963783,
+                    37.47693
+                ]
+            },
+            "properties": {
+                "역명": "낙성대",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.952745,
+                    37.481233
+                ]
+            },
+            "properties": {
+                "역명": "서울대입구",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.941896,
+                    37.482416
+                ]
+            },
+            "properties": {
+                "역명": "봉천",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.929573,
+                    37.484216
+                ]
+            },
+            "properties": {
+                "역명": "신림",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.913279,
+                    37.487534
+                ]
+            },
+            "properties": {
+                "역명": "신대방",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.902626,
+                    37.485005
+                ]
+            },
+            "properties": {
+                "역명": "구로디지털단지",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.895293,
+                    37.492426
+                ]
+            },
+            "properties": {
+                "역명": "대림",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.891222,
+                    37.508815
+                ]
+            },
+            "properties": {
+                "역명": "신도림",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.894766,
+                    37.517993
+                ]
+            },
+            "properties": {
+                "역명": "문래",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.896627,
+                    37.525766
+                ]
+            },
+            "properties": {
+                "역명": "영등포구청",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.902011,
+                    37.533877
+                ]
+            },
+            "properties": {
+                "역명": "당산",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.914557,
+                    37.550025
+                ]
+            },
+            "properties": {
+                "역명": "합정",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.923643,
+                    37.556748
+                ]
+            },
+            "properties": {
+                "역명": "홍대입구",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.93689,
+                    37.555153
+                ]
+            },
+            "properties": {
+                "역명": "신촌",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.945897,
+                    37.556734
+                ]
+            },
+            "properties": {
+                "역명": "이대",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.956079,
+                    37.557407
+                ]
+            },
+            "properties": {
+                "역명": "아현",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.964455,
+                    37.559742
+                ]
+            },
+            "properties": {
+                "역명": "충정로",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.975271,
+                    37.563534
+                ]
+            },
+            "properties": {
+                "역명": "시청",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.025158,
+                    37.574653
+                ]
+            },
+            "properties": {
+                "역명": "신설동",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.03811,
+                    37.574012
+                ]
+            },
+            "properties": {
+                "역명": "용두",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.056348,
+                    37.56147
+                ]
+            },
+            "properties": {
+                "역명": "신답",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.977863,
+                    37.566412
+                ]
+            },
+            "properties": {
+                "역명": "용답",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.882586,
+                    37.514759
+                ]
+            },
+            "properties": {
+                "역명": "도림천",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.865193,
+                    37.512194
+                ]
+            },
+            "properties": {
+                "역명": "양천구청",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.852849,
+                    37.520218
+                ]
+            },
+            "properties": {
+                "역명": "신정네거리",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.846706,
+                    37.53181
+                ]
+            },
+            "properties": {
+                "역명": "까치산",
+                "호선": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.912551,
+                    37.648281
+                ]
+            },
+            "properties": {
+                "역명": "지축",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.918827,
+                    37.636612
+                ]
+            },
+            "properties": {
+                "역명": "구파발",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.920859,
+                    37.618855
+                ]
+            },
+            "properties": {
+                "역명": "연신내",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.929843,
+                    37.610554
+                ]
+            },
+            "properties": {
+                "역명": "불광",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.935758,
+                    37.600882
+                ]
+            },
+            "properties": {
+                "역명": "녹번",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.944092,
+                    37.588851
+                ]
+            },
+            "properties": {
+                "역명": "홍제",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.950131,
+                    37.582658
+                ]
+            },
+            "properties": {
+                "역명": "무악재",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.957902,
+                    37.574534
+                ]
+            },
+            "properties": {
+                "역명": "독립문",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.973576,
+                    37.575844
+                ]
+            },
+            "properties": {
+                "역명": "경복궁",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.98547,
+                    37.576562
+                ]
+            },
+            "properties": {
+                "역명": "안국",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.991237,
+                    37.571537
+                ]
+            },
+            "properties": {
+                "역명": "종로3가",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.992616,
+                    37.566299
+                ]
+            },
+            "properties": {
+                "역명": "을지로3가",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.995473,
+                    37.561302
+                ]
+            },
+            "properties": {
+                "역명": "충무로",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.005273,
+                    37.55816
+                ]
+            },
+            "properties": {
+                "역명": "동대입구",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.010628,
+                    37.554674
+                ]
+            },
+            "properties": {
+                "역명": "약수",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.015785,
+                    37.548269
+                ]
+            },
+            "properties": {
+                "역명": "금호",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.017303,
+                    37.541653
+                ]
+            },
+            "properties": {
+                "역명": "옥수",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.028502,
+                    37.526169
+                ]
+            },
+            "properties": {
+                "역명": "압구정",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.020247,
+                    37.516438
+                ]
+            },
+            "properties": {
+                "역명": "신사",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.011613,
+                    37.512989
+                ]
+            },
+            "properties": {
+                "역명": "잠원",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.004916,
+                    37.504953
+                ]
+            },
+            "properties": {
+                "역명": "고속터미널",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.013796,
+                    37.49306
+                ]
+            },
+            "properties": {
+                "역명": "교대",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.016289,
+                    37.48494
+                ]
+            },
+            "properties": {
+                "역명": "남부터미널",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.03513,
+                    37.48466
+                ]
+            },
+            "properties": {
+                "역명": "양재",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.046907,
+                    37.487114
+                ]
+            },
+            "properties": {
+                "역명": "매봉",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.055694,
+                    37.491129
+                ]
+            },
+            "properties": {
+                "역명": "도곡",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.063449,
+                    37.494601
+                ]
+            },
+            "properties": {
+                "역명": "대치",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.070541,
+                    37.496757
+                ]
+            },
+            "properties": {
+                "역명": "학여울",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.079526,
+                    37.493607
+                ]
+            },
+            "properties": {
+                "역명": "대청",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.08416,
+                    37.48389
+                ]
+            },
+            "properties": {
+                "역명": "일원",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.101324,
+                    37.487507
+                ]
+            },
+            "properties": {
+                "역명": "수서",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.118101,
+                    37.492368
+                ]
+            },
+            "properties": {
+                "역명": "가락시장",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.124198,
+                    37.495754
+                ]
+            },
+            "properties": {
+                "역명": "경찰병원",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.128344,
+                    37.502288
+                ]
+            },
+            "properties": {
+                "역명": "오금",
+                "호선": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.078404,
+                    37.66956
+                ]
+            },
+            "properties": {
+                "역명": "당고개",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.073199,
+                    37.660576
+                ]
+            },
+            "properties": {
+                "역명": "상계",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.063183,
+                    37.656274
+                ]
+            },
+            "properties": {
+                "역명": "노원",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.046746,
+                    37.652993
+                ]
+            },
+            "properties": {
+                "역명": "창동",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.034381,
+                    37.648274
+                ]
+            },
+            "properties": {
+                "역명": "쌍문",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.024731,
+                    37.637127
+                ]
+            },
+            "properties": {
+                "역명": "수유",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.026151,
+                    37.626435
+                ]
+            },
+            "properties": {
+                "역명": "미아",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.030083,
+                    37.613276
+                ]
+            },
+            "properties": {
+                "역명": "미아사거리",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.025353,
+                    37.604087
+                ]
+            },
+            "properties": {
+                "역명": "길음",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.017338,
+                    37.592782
+                ]
+            },
+            "properties": {
+                "역명": "성신여대입구",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.006751,
+                    37.58838
+                ]
+            },
+            "properties": {
+                "역명": "한성대입구",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.001759,
+                    37.582116
+                ]
+            },
+            "properties": {
+                "역명": "혜화",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.009403,
+                    37.5708397
+                ]
+            },
+            "properties": {
+                "역명": "동대문",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.007645,
+                    37.565083
+                ]
+            },
+            "properties": {
+                "역명": "동대문역사문화공원",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.995473,
+                    37.561302
+                ]
+            },
+            "properties": {
+                "역명": "충무로",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.988271,
+                    37.561055
+                ]
+            },
+            "properties": {
+                "역명": "명동",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.979565,
+                    37.559698
+                ]
+            },
+            "properties": {
+                "역명": "회현",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.972836,
+                    37.553172
+                ]
+            },
+            "properties": {
+                "역명": "서울",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.971952,
+                    37.545124
+                ]
+            },
+            "properties": {
+                "역명": "숙대입구",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.973354,
+                    37.535057
+                ]
+            },
+            "properties": {
+                "역명": "삼각지",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.96858,
+                    37.52919
+                ]
+            },
+            "properties": {
+                "역명": "신용산",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.97335,
+                    37.522525
+                ]
+            },
+            "properties": {
+                "역명": "이촌",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.980171,
+                    37.503567
+                ]
+            },
+            "properties": {
+                "역명": "동작",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.982309,
+                    37.487521
+                ]
+            },
+            "properties": {
+                "역명": "총신대입구",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.981746,
+                    37.476563
+                ]
+            },
+            "properties": {
+                "역명": "사당",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.989081,
+                    37.464339
+                ]
+            },
+            "properties": {
+                "역명": "남태령",
+                "호선": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.812822,
+                    37.577669
+                ]
+            },
+            "properties": {
+                "역명": "방화",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.806838,
+                    37.572458
+                ]
+            },
+            "properties": {
+                "역명": "개화산",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.801273,
+                    37.56217
+                ]
+            },
+            "properties": {
+                "역명": "김포공항",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.812052,
+                    37.561411
+                ]
+            },
+            "properties": {
+                "역명": "송정",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.82693,
+                    37.562182
+                ]
+            },
+            "properties": {
+                "역명": "마곡",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.82693,
+                    37.562182
+                ]
+            },
+            "properties": {
+                "역명": "발산",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.83633,
+                    37.548864
+                ]
+            },
+            "properties": {
+                "역명": "우장산",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.840436,
+                    37.541585
+                ]
+            },
+            "properties": {
+                "역명": "화곡",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.846706,
+                    37.53181
+                ]
+            },
+            "properties": {
+                "역명": "까치산",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.856176,
+                    37.525001
+                ]
+            },
+            "properties": {
+                "역명": "신정",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.864296,
+                    37.526088
+                ]
+            },
+            "properties": {
+                "역명": "목동",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.875049,
+                    37.524557
+                ]
+            },
+            "properties": {
+                "역명": "오목교",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.886177,
+                    37.525614
+                ]
+            },
+            "properties": {
+                "역명": "양평",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.895022,
+                    37.524209
+                ]
+            },
+            "properties": {
+                "역명": "영등포구청",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.905143,
+                    37.52276
+                ]
+            },
+            "properties": {
+                "역명": "영등포시장",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.914886,
+                    37.51763
+                ]
+            },
+            "properties": {
+                "역명": "신길",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.924318,
+                    37.521578
+                ]
+            },
+            "properties": {
+                "역명": "여의도",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.932807,
+                    37.527145
+                ]
+            },
+            "properties": {
+                "역명": "여의나루",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.946043,
+                    37.539718
+                ]
+            },
+            "properties": {
+                "역명": "마포",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.951058,
+                    37.544005
+                ]
+            },
+            "properties": {
+                "역명": "공덕",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.956733,
+                    37.553592
+                ]
+            },
+            "properties": {
+                "역명": "애오개",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.962783,
+                    37.560061
+                ]
+            },
+            "properties": {
+                "역명": "충정로",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.966639,
+                    37.565812
+                ]
+            },
+            "properties": {
+                "역명": "서대문",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.976568,
+                    37.570545
+                ]
+            },
+            "properties": {
+                "역명": "광화문",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.990447,
+                    37.572546
+                ]
+            },
+            "properties": {
+                "역명": "종로3가",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.998127,
+                    37.56658
+                ]
+            },
+            "properties": {
+                "역명": "을지로4가",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.00533,
+                    37.564682
+                ]
+            },
+            "properties": {
+                "역명": "동대문역사문화공원",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.01379,
+                    37.560237
+                ]
+            },
+            "properties": {
+                "역명": "청구",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.020403,
+                    37.554504
+                ]
+            },
+            "properties": {
+                "역명": "신금호",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.029482,
+                    37.557297
+                ]
+            },
+            "properties": {
+                "역명": "행당",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.037264,
+                    37.56197
+                ]
+            },
+            "properties": {
+                "역명": "왕십리",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.042921,
+                    37.566066
+                ]
+            },
+            "properties": {
+                "역명": "마장",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.05266,
+                    37.566833
+                ]
+            },
+            "properties": {
+                "역명": "답십리",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.064601,
+                    37.561438
+                ]
+            },
+            "properties": {
+                "역명": "장한평",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.079559,
+                    37.557102
+                ]
+            },
+            "properties": {
+                "역명": "군자",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.089609,
+                    37.552005
+                ]
+            },
+            "properties": {
+                "역명": "아차산",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.103478,
+                    37.545301
+                ]
+            },
+            "properties": {
+                "역명": "광나루",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.123539,
+                    37.538566
+                ]
+            },
+            "properties": {
+                "역명": "천호",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.13249,
+                    37.53581
+                ]
+            },
+            "properties": {
+                "역명": "강동",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.140085,
+                    37.538022
+                ]
+            },
+            "properties": {
+                "역명": "길동",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.142844,
+                    37.545442
+                ]
+            },
+            "properties": {
+                "역명": "굽은다리",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.144002,
+                    37.551317
+                ]
+            },
+            "properties": {
+                "역명": "명일",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.154214,
+                    37.555002
+                ]
+            },
+            "properties": {
+                "역명": "고덕",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.166381,
+                    37.556714
+                ]
+            },
+            "properties": {
+                "역명": "상일동",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.136219,
+                    37.527787
+                ]
+            },
+            "properties": {
+                "역명": "둔촌동",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.130957,
+                    37.516217
+                ]
+            },
+            "properties": {
+                "역명": "올림픽공원",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.126054,
+                    37.508752
+                ]
+            },
+            "properties": {
+                "역명": "방이",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.127701,
+                    37.502228
+                ]
+            },
+            "properties": {
+                "역명": "오금",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.134817,
+                    37.498097
+                ]
+            },
+            "properties": {
+                "역명": "개롱",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.143983,
+                    37.493208
+                ]
+            },
+            "properties": {
+                "역명": "거여",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.152784,
+                    37.494972
+                ]
+            },
+            "properties": {
+                "역명": "마천",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.176018,
+                    37.557521
+                ]
+            },
+            "properties": {
+                "역명": "강일",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.192954,
+                    37.56329
+                ]
+            },
+            "properties": {
+                "역명": "미사",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.203897,
+                    37.552201
+                ]
+            },
+            "properties": {
+                "역명": "하남풍산",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.206901,
+                    37.541723
+                ]
+            },
+            "properties": {
+                "역명": "하남시청",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.223427,
+                    37.539729
+                ]
+            },
+            "properties": {
+                "역명": "하남검단산",
+                "호선": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.915583,
+                    37.59859
+                ]
+            },
+            "properties": {
+                "역명": "응암",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.922764,
+                    37.60605
+                ]
+            },
+            "properties": {
+                "역명": "역촌",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.929504,
+                    37.610919
+                ]
+            },
+            "properties": {
+                "역명": "불광",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.933035,
+                    37.618413
+                ]
+            },
+            "properties": {
+                "역명": "독바위",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.920519,
+                    37.618596
+                ]
+            },
+            "properties": {
+                "역명": "연신내",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.917246,
+                    37.611223
+                ]
+            },
+            "properties": {
+                "역명": "구산",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.913613,
+                    37.591148
+                ]
+            },
+            "properties": {
+                "역명": "새절",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.909785,
+                    37.583989
+                ]
+            },
+            "properties": {
+                "역명": "증산",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.898643,
+                    37.577005
+                ]
+            },
+            "properties": {
+                "역명": "디지털미디어시티",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.899077,
+                    37.569439
+                ]
+            },
+            "properties": {
+                "역명": "월드컵경기장",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.903326,
+                    37.563535
+                ]
+            },
+            "properties": {
+                "역명": "마포구청",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.910129,
+                    37.556031
+                ]
+            },
+            "properties": {
+                "역명": "망원",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.913546,
+                    37.549033
+                ]
+            },
+            "properties": {
+                "역명": "합정",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.92292,
+                    37.547704
+                ]
+            },
+            "properties": {
+                "역명": "상수",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.931971,
+                    37.547464
+                ]
+            },
+            "properties": {
+                "역명": "광흥창",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.942214,
+                    37.547732
+                ]
+            },
+            "properties": {
+                "역명": "대흥",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.951664,
+                    37.543592
+                ]
+            },
+            "properties": {
+                "역명": "공덕",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.961348,
+                    37.539279
+                ]
+            },
+            "properties": {
+                "역명": "효창공원앞",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.973996,
+                    37.535563
+                ]
+            },
+            "properties": {
+                "역명": "삼각지",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.98665,
+                    37.53469
+                ]
+            },
+            "properties": {
+                "역명": "녹사평",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.994369,
+                    37.534485
+                ]
+            },
+            "properties": {
+                "역명": "이태원",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.001729,
+                    37.53956
+                ]
+            },
+            "properties": {
+                "역명": "한강진",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.006948,
+                    37.547933
+                ]
+            },
+            "properties": {
+                "역명": "버티고개",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.010237,
+                    37.554087
+                ]
+            },
+            "properties": {
+                "역명": "약수",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.013776,
+                    37.560221
+                ]
+            },
+            "properties": {
+                "역명": "청구",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.016158,
+                    37.566174
+                ]
+            },
+            "properties": {
+                "역명": "신당",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.015666,
+                    37.572275
+                ]
+            },
+            "properties": {
+                "역명": "동묘앞",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.015246,
+                    37.579772
+                ]
+            },
+            "properties": {
+                "역명": "창신",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.019377,
+                    37.585293
+                ]
+            },
+            "properties": {
+                "역명": "보문",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.02903,
+                    37.586261
+                ]
+            },
+            "properties": {
+                "역명": "안암",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.03626,
+                    37.59034
+                ]
+            },
+            "properties": {
+                "역명": "고려대",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.041492,
+                    37.60192
+                ]
+            },
+            "properties": {
+                "역명": "월곡",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.048509,
+                    37.606392
+                ]
+            },
+            "properties": {
+                "역명": "상월곡",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.056419,
+                    37.610522
+                ]
+            },
+            "properties": {
+                "역명": "돌곶이",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.065922,
+                    37.614937
+                ]
+            },
+            "properties": {
+                "역명": "석계",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.074741,
+                    37.617319
+                ]
+            },
+            "properties": {
+                "역명": "태릉입구",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.084106,
+                    37.619875
+                ]
+            },
+            "properties": {
+                "역명": "화랑대",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.091375,
+                    37.617293
+                ]
+            },
+            "properties": {
+                "역명": "봉화산",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.104326,
+                    37.612571
+                ]
+            },
+            "properties": {
+                "역명": "신내",
+                "호선": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.053126,
+                    37.70015
+                ]
+            },
+            "properties": {
+                "역명": "장암",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.046548,
+                    37.689131
+                ]
+            },
+            "properties": {
+                "역명": "도봉산",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.055314,
+                    37.677804
+                ]
+            },
+            "properties": {
+                "역명": "수락산",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.057701,
+                    37.664985
+                ]
+            },
+            "properties": {
+                "역명": "마들",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.060555,
+                    37.654478
+                ]
+            },
+            "properties": {
+                "역명": "노원",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.064084,
+                    37.645052
+                ]
+            },
+            "properties": {
+                "역명": "중계",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.067999,
+                    37.636363
+                ]
+            },
+            "properties": {
+                "역명": "하계",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.072969,
+                    37.625642
+                ]
+            },
+            "properties": {
+                "역명": "공릉",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.074741,
+                    37.617319
+                ]
+            },
+            "properties": {
+                "역명": "태릉입구",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.077719,
+                    37.610638
+                ]
+            },
+            "properties": {
+                "역명": "먹골",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.079254,
+                    37.602604
+                ]
+            },
+            "properties": {
+                "역명": "중화",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.085708,
+                    37.595673
+                ]
+            },
+            "properties": {
+                "역명": "상봉",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.087503,
+                    37.588671
+                ]
+            },
+            "properties": {
+                "역명": "면목",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.088502,
+                    37.580912
+                ]
+            },
+            "properties": {
+                "역명": "사가정",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.086802,
+                    37.573752
+                ]
+            },
+            "properties": {
+                "역명": "용마산",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.084291,
+                    37.565877
+                ]
+            },
+            "properties": {
+                "역명": "중곡",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.079484,
+                    37.557151
+                ]
+            },
+            "properties": {
+                "역명": "군자",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.07465,
+                    37.547962
+                ]
+            },
+            "properties": {
+                "역명": "어린이대공원",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.071103,
+                    37.540882
+                ]
+            },
+            "properties": {
+                "역명": "건대입구",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.066714,
+                    37.531558
+                ]
+            },
+            "properties": {
+                "역명": "뚝섬유원지",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.051851,
+                    37.519097
+                ]
+            },
+            "properties": {
+                "역명": "청담",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.04122,
+                    37.517185
+                ]
+            },
+            "properties": {
+                "역명": "강남구청",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.031738,
+                    37.514262
+                ]
+            },
+            "properties": {
+                "역명": "학동",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.021385,
+                    37.511108
+                ]
+            },
+            "properties": {
+                "역명": "논현",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.011717,
+                    37.508171
+                ]
+            },
+            "properties": {
+                "역명": "반포",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.005055,
+                    37.503387
+                ]
+            },
+            "properties": {
+                "역명": "고속터미널",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.993541,
+                    37.48764
+                ]
+            },
+            "properties": {
+                "역명": "내방",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.981766,
+                    37.485258
+                ]
+            },
+            "properties": {
+                "역명": "총신대입구",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.971108,
+                    37.484688
+                ]
+            },
+            "properties": {
+                "역명": "남성",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.953649,
+                    37.496258
+                ]
+            },
+            "properties": {
+                "역명": "숭실대입구",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.947949,
+                    37.50279
+                ]
+            },
+            "properties": {
+                "역명": "상도",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.939025,
+                    37.504845
+                ]
+            },
+            "properties": {
+                "역명": "장승배기",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.928218,
+                    37.499717
+                ]
+            },
+            "properties": {
+                "역명": "신대방삼거리",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.920112,
+                    37.499916
+                ]
+            },
+            "properties": {
+                "역명": "보라매",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.909806,
+                    37.500107
+                ]
+            },
+            "properties": {
+                "역명": "신풍",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.896997,
+                    37.492984
+                ]
+            },
+            "properties": {
+                "역명": "대림",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.887372,
+                    37.486181
+                ]
+            },
+            "properties": {
+                "역명": "남구로",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.882704,
+                    37.480376
+                ]
+            },
+            "properties": {
+                "역명": "가산디지털단지",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.868217,
+                    37.47616
+                ]
+            },
+            "properties": {
+                "역명": "철산",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.854854,
+                    37.47927
+                ]
+            },
+            "properties": {
+                "역명": "광명사거리",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.838684,
+                    37.486699
+                ]
+            },
+            "properties": {
+                "역명": "천왕",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.823294,
+                    37.492059
+                ]
+            },
+            "properties": {
+                "역명": "온수",
+                "호선": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.127521,
+                    37.550127
+                ]
+            },
+            "properties": {
+                "역명": "암사",
+                "호선": 8
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.123179,
+                    37.53792
+                ]
+            },
+            "properties": {
+                "역명": "천호",
+                "호선": 8
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.120461,
+                    37.530348
+                ]
+            },
+            "properties": {
+                "역명": "강동구청",
+                "호선": 8
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.11274,
+                    37.517692
+                ]
+            },
+            "properties": {
+                "역명": "몽촌토성",
+                "호선": 8
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.104267,
+                    37.514649
+                ]
+            },
+            "properties": {
+                "역명": "잠실",
+                "호선": 8
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.106995,
+                    37.505396
+                ]
+            },
+            "properties": {
+                "역명": "석촌",
+                "호선": 8
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.11212,
+                    37.49978
+                ]
+            },
+            "properties": {
+                "역명": "송파",
+                "호선": 8
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.118279,
+                    37.493004
+                ]
+            },
+            "properties": {
+                "역명": "가락시장",
+                "호선": 8
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.122473,
+                    37.485931
+                ]
+            },
+            "properties": {
+                "역명": "문정",
+                "호선": 8
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.126229,
+                    37.478609
+                ]
+            },
+            "properties": {
+                "역명": "장지",
+                "호선": 8
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.126746,
+                    37.471016
+                ]
+            },
+            "properties": {
+                "역명": "복정",
+                "호선": 8
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.139047,
+                    37.462839
+                ]
+            },
+            "properties": {
+                "역명": "남위례",
+                "호선": 8
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.149927,
+                    37.456886
+                ]
+            },
+            "properties": {
+                "역명": "산성",
+                "호선": 8
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.159845,
+                    37.451568
+                ]
+            },
+            "properties": {
+                "역명": "남한산성입구",
+                "호선": 8
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.156735,
+                    37.445057
+                ]
+            },
+            "properties": {
+                "역명": "단대오거리",
+                "호선": 8
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.14759,
+                    37.440952
+                ]
+            },
+            "properties": {
+                "역명": "신흥",
+                "호선": 8
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.140936,
+                    37.437575
+                ]
+            },
+            "properties": {
+                "역명": "수진",
+                "호선": 8
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.129921,
+                    37.433888
+                ]
+            },
+            "properties": {
+                "역명": "모란",
+                "호선": 8
+            }
+        }
+    ]
+}
