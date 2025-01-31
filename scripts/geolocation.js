@@ -5,7 +5,6 @@ let marker = null;
 
 // 위치 정보를 가져오는 함수
 export function getLocation(map) {
-  console.log(window.navigator.userAgent);
   const userLanguage = navigator.language || navigator.userLanguage;
 
   console.log(userLanguage);

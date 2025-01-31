@@ -80,6 +80,8 @@ function addSubway(map) {
             data: '/assets/data/subway.geojson'
         });
 
+        map.loadImage('/assets/images/subway.png');
+
         // 지하철 역 아이콘 레이어 추가
         map.addLayer({
             id: 'subway-layer',
@@ -87,8 +89,7 @@ function addSubway(map) {
             source: 'subway',
             layout: {
                 'icon-image': 'subway', 
-                'icon-size': 1,           // 아이콘 크기
-                'text-font': ['Open Sans Regular'], 
+                'icon-size': 1.2,           // 아이콘 크기
                 'text-offset': [0, 1.2],   // 텍스트 위치 조정
                 'text-anchor': 'top',      // 텍스트 정렬
                 'icon-allow-overlap': true // 아이콘 겹침 허용
@@ -97,9 +98,6 @@ function addSubway(map) {
                 'text-color': '#333333'    // 텍스트 색상
             }
         });
-
-        // 아이콘 등록 
-        map.loadImage('/assets/images/subway.png');
 
         // 레이어 클릭 이벤트
         map.on('click', 'subway-layer', (e) => {
@@ -136,6 +134,6 @@ window.mapInstance = map; // 전역으로 저장
 add3DBuildingsLayer(map);
 addSubway(map);
 
-initializeSearchUI(); // 검색 UI 초기화
+initializeSearchUI(); 
 setupSearch(map);
 getFavoriteList();
