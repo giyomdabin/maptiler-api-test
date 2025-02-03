@@ -99,7 +99,14 @@ function addSubway(map) {
             },
             paint: {
                 'text-color': '#333333'    // 텍스트 색상
-            }
+            },
+            filter: [
+                "step",
+                ["zoom"],
+                ["==", ["%", ["get", "id"], 10], 0], // 줌 10 이하 → 10개 중 1개만 표시
+                12, ["==", ["%", ["get", "id"], 5], 0], // 줌 11 이하 → 5개 중 1개만 표시
+                13, true // 줌 13 이상 → 모든 아이콘 표시
+            ]
         });
 
         // 레이어 클릭 이벤트
@@ -115,9 +122,9 @@ function addSubway(map) {
             // Popup 생성
             new maplibregl.Popup()
                 .setLngLat(coordinates) // 클릭한 위치
-                .setHTML(`<strong>${stationName}</strong><br>호선: ${lineInfo}<br>${lng},${lat}`)
+                .setHTML(`<strong>${stationName}역</strong><br>${lineInfo}<br>${lng},${lat}`)
                 .addTo(map);
-        });
+        });       
 
         // 마우스 포인터 모양 변경 (클릭 가능한 피드백)
         map.on('mouseenter', 'subway-layer', () => {
