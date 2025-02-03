@@ -2,11 +2,14 @@ import maplibregl from 'maplibre-gl';
 import { setupSearch } from '/scripts/search.js';
 import { initializeSearchUI } from '/components/resultList.js';
 import { getFavoriteList } from './components/favoriteList';
+import { getWeather } from './scripts/weather.js'; // weather.js에서 API 호출 함수 import
+import { renderWeatherWidget  } from './components/weatherInfo.js'; // weatherInfo.js에서 표시 함수 import
 
 const MAPTILER_KEY = import.meta.env.VITE_MAPTILER_API_KEY;
 
 // 지도 초기화 함수
 function initializeMap(containerId) {
+
     return new maplibregl.Map({
         style: `https://api.maptiler.com/maps/basic-v2/style.json?key=${MAPTILER_KEY}`,
         center: [126.9780, 37.5665], // 서울 중심
@@ -127,7 +130,6 @@ function addSubway(map) {
     });
 }
 
-
 // 지도 초기화 및 기능 실행
 const map = initializeMap('map');
 window.mapInstance = map; // 전역으로 저장
@@ -137,3 +139,8 @@ addSubway(map);
 initializeSearchUI(); 
 setupSearch(map);
 getFavoriteList();
+
+// 날씨 조회 버튼 이벤트 리스너 추가
+document.addEventListener("DOMContentLoaded", () => {
+  renderWeatherWidget();  // 날씨 UI 렌더링
+});

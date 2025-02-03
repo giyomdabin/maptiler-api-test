@@ -1,4 +1,5 @@
 import maplibregl from 'maplibre-gl';
+import { renderWeatherWidget } from '../components/weatherInfo.js';
 
 let previousCoords = null; // 이전 위치를 저장
 let marker = null;
@@ -6,8 +7,6 @@ let marker = null;
 // 위치 정보를 가져오는 함수
 export function getLocation(map) {
   const userLanguage = navigator.language || navigator.userLanguage;
-
-  console.log(userLanguage);
 
   if ("geolocation" in navigator) {
     // Geolocation API 사용 가능
@@ -32,10 +31,12 @@ export function getLocation(map) {
         .setLngLat([lng, lat])
         .setPopup(
           new maplibregl.Popup().setHTML(`
-            <b>현재 위치</b>
+            <b>현재 위치</b><br>
             ${lat}<br>${lng}
           `)
         ).addTo(map);
+
+      renderWeatherWidget();
 
       map.flyTo({
         center: [lng, lat],
