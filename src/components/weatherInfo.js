@@ -1,4 +1,4 @@
-import { getWeather } from '../scripts/weather.js';
+import { getWeather } from '../utils/weather.js';
 
 export function renderWeatherWidget() {
   const weatherContainer = document.getElementById("weather-container");

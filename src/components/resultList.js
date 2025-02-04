@@ -1,6 +1,6 @@
 import maplibregl from 'maplibre-gl';
-import {resetPreviousCoords} from '../scripts/geolocation.js';
-import { addFavorite, loadFavorites, removeFavorite } from '../scripts/favorite.js';
+import {resetPreviousCoords} from '../utils/geolocation.js';
+import { addFavorite, loadFavorites, removeFavorite } from '../utils/favorite.js';
 
 let markers = []; // 지도에 추가된 마커를 관리하는 배열
 

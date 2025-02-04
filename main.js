@@ -1,8 +1,8 @@
 import maplibregl from 'maplibre-gl';
-import { setupSearch } from '/scripts/search.js';
-import { initializeSearchUI } from '/components/resultList.js';
-import { getFavoriteList } from './components/favoriteList';
-import { renderWeatherWidget  } from './components/weatherInfo.js'; // weatherInfo.js에서 표시 함수 import
+import { setupSearch } from '/src/utils/search.js';
+import { initializeSearchUI } from '/src/components/resultList.js';
+import { getFavoriteList } from '/src/components/favoriteList';
+import { renderWeatherWidget  } from '/src/components/weatherInfo.js'; // weatherInfo.js에서 표시 함수 import
 
 const MAPTILER_KEY = import.meta.env.VITE_MAPTILER_API_KEY;
 

@@ -1,4 +1,4 @@
-import { loadFavorites, removeFavorite } from '../scripts/favorite.js';
+import { loadFavorites, removeFavorite } from '../utils/favorite.js';
 
 const favoriteListButton = document.getElementById('favorite-list'); // 버튼
 const resultsContainer = document.getElementById('favorite-results'); // 즐겨찾기 결과 
