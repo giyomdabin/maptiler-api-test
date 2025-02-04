@@ -51,8 +51,6 @@ export function renderSearchResults(items, map) {
         const { x, y } = item.point; 
         const name = item.title || '제목 없음';
         const address = item.address.road || '주소 정보 없음';
-        
-        console.log(parseFloat(x), parseFloat(y));
 
          // 즐겨찾기 상태 확인
          const isFavorite = favorites[address] === name;

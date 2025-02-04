@@ -2,7 +2,6 @@ import maplibregl from 'maplibre-gl';
 import { setupSearch } from '/scripts/search.js';
 import { initializeSearchUI } from '/components/resultList.js';
 import { getFavoriteList } from './components/favoriteList';
-import { getWeather } from './scripts/weather.js'; // weather.js에서 API 호출 함수 import
 import { renderWeatherWidget  } from './components/weatherInfo.js'; // weatherInfo.js에서 표시 함수 import
 
 const MAPTILER_KEY = import.meta.env.VITE_MAPTILER_API_KEY;
@@ -103,8 +102,8 @@ function addSubway(map) {
             filter: [
                 "step",
                 ["zoom"],
-                ["==", ["%", ["get", "id"], 10], 0], // 줌 10 이하 → 10개 중 1개만 표시
-                12, ["==", ["%", ["get", "id"], 5], 0], // 줌 11 이하 → 5개 중 1개만 표시
+                ["==", ["%", ["get", "id"], 15], 0], // 줌 10 이하 → 10개 중 1개만 표시
+                12, ["==", ["%", ["get", "id"], 10], 0], // 줌 11 이하 → 5개 중 1개만 표시
                 13, true // 줌 13 이상 → 모든 아이콘 표시
             ]
         });
