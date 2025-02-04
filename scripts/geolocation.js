@@ -4,43 +4,14 @@ import { renderWeatherWidget } from '../components/weatherInfo.js';
 let previousCoords = null; // 이전 위치 저장
 let marker = null;
 
-// 위치 권한 상태 확인 함수
- 
-async function checkLocationPermission() {
-  if (!navigator.permissions) {
-    console.warn("`navigator.permissions`가 지원되지 않는 브라우저입니다.");
-    return "prompt"; // 기본값
-  }
-
-  try {
-    const permissionStatus = await navigator.permissions.query({ name: "geolocation" });
-    return permissionStatus.state; // "granted", "denied", "prompt"
-  } catch (error) {
-    console.error("위치 권한 확인 중 오류:", error);
-    return "prompt";
-  }
-}
-
-function showPermissionAlert() {
-  alert("위치 접근이 차단되었습니다. 브라우저 설정에서 권한을 다시 허용해주세요.");
-}
 
 // 위치 정보를 가져오는 함수
 export async function getLocation(map) {
-  const permissionState = await checkLocationPermission();
-
-  if (permissionState === "denied") {
-    showPermissionAlert();
-    return;
-  }
-
   if ("geolocation" in navigator) {
     navigator.geolocation.getCurrentPosition(
       (position) => {
         const lat = position.coords.latitude;
         const lng = position.coords.longitude;
-
-        console.log(`현재 위치: 경도 ${lng}, 위도 ${lat}`);
 
         if (previousCoords && previousCoords.lat === lat && previousCoords.lng === lng) {
           map.flyTo({ center: [lng, lat], zoom: 15 });
@@ -62,7 +33,7 @@ export async function getLocation(map) {
       (error) => {
 
         if (error.code === error.PERMISSION_DENIED) {
-          showPermissionAlert();
+          alert("위치 접근이 차단되었습니다. 브라우저 설정에서 권한을 다시 허용해주세요.");
         } else {
           alert("위치 정보를 가져올 수 없습니다.");
         }

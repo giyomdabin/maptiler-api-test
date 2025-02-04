@@ -136,17 +136,20 @@ function addSubway(map) {
     });
 }
 
-// 지도 초기화 및 기능 실행
-const map = initializeMap('map');
-window.mapInstance = map; // 전역으로 저장
-add3DBuildingsLayer(map);
-addSubway(map);
+// 앱 초기화 함수
+function initializeApp() {
+    const map = initializeMap('map');
+    window.mapInstance = map; // 전역으로 저장
 
-initializeSearchUI(); 
-setupSearch(map);
-getFavoriteList();
+    add3DBuildingsLayer(map);
+    addSubway(map);
+    initializeSearchUI();
+    setupSearch(map);
+    getFavoriteList();
+    renderWeatherWidget();
+}
 
-// 날씨 조회 버튼 이벤트 리스너 추가
+// DOM이 로드되면 `initializeApp()` 실행
 document.addEventListener("DOMContentLoaded", () => {
-  renderWeatherWidget();  // 날씨 UI 렌더링
+    initializeApp();
 });
