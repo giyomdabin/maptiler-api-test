@@ -32,7 +32,7 @@ function  basicSearch(query, searchType, addressCategory) {
 }
 
 // 위치 권한 허용한 경우
-function createVWorldSearchUrlWithBoundingBox(query, searchType, addressCategory, userLat, userLng, rangeKm = 3) {
+function createVWorldSearchUrlWithBoundingBox(query, searchType, addressCategory, userLat, userLng, rangeKm = 1) {
     // 반경을 기준으로 BBOX 좌표 계산
     const delta = rangeKm / 111; 
     const minLat = userLat - delta;
